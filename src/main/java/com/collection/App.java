@@ -57,13 +57,11 @@ public class App
 
         Map<String, Employee> mapEmployee = new HashMap<>();
 
-        mapEmployee.put(new Employee("KR001", "Andi", 7000000));
-        mapEmployee.put(new Employee("KR002", "Budi", 5000000));
-        mapEmployee.put(new Employee("KR003", "Citra", 6000000));
-
-
+        System.out.println();
         System.out.println("Employee Map");
-        for(Employee employee : mapEmployee){
+        for(Employee employee : listEmployee){
+            mapEmployee.put(employee.getEmployeeCode(),employee);
+
             System.out.println(employee.getEmployeeCode() + " - " + employee.getEmployeeName() + " - " + employee.getEmployeeSalary());
         }
 
